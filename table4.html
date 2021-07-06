@@ -1,0 +1,105 @@
+﻿<html>
+	<head>
+		<style>
+		button{
+			text-align: center;
+			height: 35px;
+			margin-top: 20px;
+			margin-left: 220px;
+			font-weight: bold;
+			border-radius: 20px;
+			border: 2px solid white;
+			color: black;
+			width: 78px;
+			background: #46ff7f;
+		}
+		#four{
+			width: 90%;
+			height:190px;
+			margin: 25px;
+			text-align: left;
+			border-collapse: collapse;
+		}
+		#four td,th{
+			padding-left: 10px;
+		}
+		#four tr:nth-child(odd){
+			background: #d5d3d3f7;
+		}
+		#four tr:nth-child(even){
+			background: white;
+		}
+		</style>
+	</head>
+<body style="background: #000000de; color: #46ff7f;">
+	<button type="btn4" onclick="document.getElementById('four').style.visibility='visible'">Show</button>
+	<button type="btn4" onclick="document.getElementById('four').style.visibility='hidden'">Hide</button>
+	<button onclick="addRow();">Add Row</button>
+	<button onclick="deletRow();">Delet Row</button><br><br>
+	Name : <input type="text" name="name" id="name"><br><br>
+	Age : <input type="text" name="name" id="age"><br><br>
+	Occupation : <input type="text" name="name" id="Occupation"><br><br>
+	Location : <input type="text" name="name" id="location"><br><br>
+	<table id="four" style="color: black;">
+		<tr style="background: #f8471f; color: white; font-weight: bold;">
+		<th>Name</th>
+		<th>Age</th>
+		<th>Occupation</th>
+		<th>Location</th>
+		</tr>
+		<tr>
+		<td>Luke Peters</td>
+		<td>25</td>
+		<td>Freelance Web Developer</td>
+		<td>Brookline, MA</td>
+		</tr>
+		<tr>
+		<td>Joseph Smith</td>
+		<td>27</td>
+		<td>Project Manager</td>
+		<td>Somerville, MA</td>
+		</tr>
+		<tr>
+		<td>Maxwell Johnson</td>
+		<td>26</td>
+		<td>Ux Architect & Designer</td>
+		<td>Arlington, MA</td>
+		</tr>
+		<tr>
+		<td>Harry Harrison</td>
+		<td>25</td>
+		<td>Front-End Developer</td>
+		<td>Boston, MA</td>
+		</tr>
+	</table>
+	<script>
+		function  addRow()
+		{
+		var table = document.getElementById('four');
+		
+		var name = document.getElementById('name').value;
+		var age = document.getElementById('age').value;
+		var occ = document.getElementById('occupation').value;
+		var loc = document.getElementById('location').value;
+		
+		var row = table.insertRow(-1);
+
+
+		var cell1 = row.insertCel(0);
+		var cell2 = row.insertCel(1);
+		var cell3 = row.insertCel(2);
+		var cell4 = row.insertCel(3);
+
+		cel1.innerHTML = name;
+		cel2.innerHTML = age;
+		cel3.innerHTML = occ;
+		cel4.innerHTML = loc;
+
+		}
+		function deletRow()
+		{
+		table.deletRow(0);
+		}
+	</script>
+</body>
+</html>

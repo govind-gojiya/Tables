@@ -1,0 +1,68 @@
+﻿<html>
+	<head>
+		<title>Tables</title>
+		<style>
+		button{
+			text-align: center;
+			height: 35px;
+			margin-top: 20px;
+			margin-left: 220px;
+			font-weight: bold;
+			border-radius: 20px;
+			color: black;
+			width: 78px;
+			background: #46ff7f;
+		}
+		table{
+			
+			border: 1px solid black;
+			border-collapse: collapse;
+			margin: 25px;
+			width: 90%;
+		}
+		#one{
+			height: 150px;
+			font-weight: bold;
+		}
+		#one tr:nth-child(even){	
+			background: lightgray;
+			color: black;
+		}
+		</style>
+	</head>
+<body>
+		
+	<button type="btn1" onclick="document.getElementById('one').style.visibility='visible'">Show</button>
+	<button type="btn1" onclick="document.getElementById('one').style.visibility='hidden'">Hide</button>
+	<table id="one" style="text-align: center; border: 0.5px solid lightgray">
+		<tr style="background: black; color: white;">
+		<td>NAME <small> (DESC)</small></td>
+		<td>WINS</td>
+		<td>DRAWS</td>
+		<td>LOSSES</td>
+		<td>TOTAL</td>
+		</tr>
+		<tr>
+		<td>Dick</td>
+		<td>1</td>
+		<td>1</td>
+		<td>2</td>
+		<td>3</td>
+		</tr>
+		<tr>
+		<td>Harry</td>
+		<td>0</td>
+		<td>2</td>
+		<td>2</td>
+		<td>2</td>
+		</tr>
+		<tr>
+		<td>Tom</td>
+		<td>2</td>
+		<td>0</td>
+		<td>1</td>
+		<td>5</td>
+		</tr>
+	</table>
+</body>
+</hmtl>

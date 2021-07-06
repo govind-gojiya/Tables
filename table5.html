@@ -1,0 +1,75 @@
+﻿<html>
+	<head>
+		<style>
+		button{
+			text-align: center;
+			height: 35px;
+			margin-top: 20px;
+			margin-left: 220px;
+			font-weight: bold;
+			border-radius: 20px;
+			border: 2px solid white;
+			color: black;
+			width: 78px;
+			background: #46ff7f;
+		}
+		#five{
+			width: 90%;
+			height:190px;
+			margin: 25px;
+			text-align: left;
+			border-collapse: collapse;
+		}
+		#five td,th{
+			padding-left: 10px;
+		}
+		#five tr:nth-child(odd){
+			background: #d5d3d3f7;
+		}
+		#five tr:nth-child(even){
+			background: white;
+		}
+		</style>
+	</head>
+<body style="background: #000000de;">
+	<button type="btn5" Show" onclick="document.getElementById('five').style.visibility='visible'">Show</button>
+	<button type="btn5" onclick="document.getElementById('five').style.visibility='hidden'">Hide</button>
+	<table id="five">
+		<tr style="background: #0ba30b; color: white; font-weight: bold;">
+		<th>Product</th>
+		<th>Unit Price</th>
+		<th>Quantity</th>
+		<th>Date Sold</th>
+		<th>Status</th>
+		</tr>
+		<tr>
+		<td>Solid oak work table</td>
+		<td>$800</td>
+		<td>10</td>
+		<td>03/15/2014</td>
+		<td>Waiting for Pickup</td>
+		</tr>
+		<tr>
+		<td>Leather iphone wallet</td>
+		<td>$45</td>
+		<td>120</td>
+		<td>02/28/2014</td>
+		<td>In Transit</td>
+		</tr>
+		<tr>
+		<td>27" Apple Thunderbolt displays</td>
+		<td>$100</td>
+		<td>25</td>
+		<td>02/10/2014</td>
+		<td>Delivered</td>
+		</tr>
+		<tr>
+		<td>Bose studio headphones</td>
+		<td>$60</td>
+		<td>90</td>
+		<td>01/14/2014</td>
+		<td>Delivered</td>
+		</tr>
+	</table>
+</body>
+</html>

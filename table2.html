@@ -1,0 +1,99 @@
+﻿<html>
+	<head>
+		<style>
+		button{
+			text-align: center;
+			height: 35px;
+			margin-top: 20px;
+			margin-left: 220px;
+			font-weight: bold;
+			border-radius: 20px;
+			color: black;
+			width: 78px;
+			background: #46ff7f;
+		}
+		caption{
+			font-size: x-large;
+		}
+		
+
+		table{
+
+			border-collapse: separate;
+
+ 			border-spacing: 0 15px;
+
+			width: 90%;
+       			height: 190px;
+  			margin: 25px;
+			text-align: left;
+		}
+
+
+		tr{
+
+ 			box-shadow: 1px 1px 1px 1px gray;
+
+			padding: 10px;
+		}
+
+		th{
+ 			padding: 15px;
+
+  			border-left:none;
+
+  			border-right: none;
+
+		}
+		td{
+
+			padding: 15px;
+		}
+		</style>
+	</head>
+<body>
+	<button type="btn2" onclick="document.getElementById('two').style.visibility='visible'">Show</button>
+	<button type="btn2" onclick="document.getElementById('two').style.visibility='hidden'">Hide</button>
+<div id="two">
+	<table>
+		<caption>Responsive Table Using LI<small> Triggers on 767px</small></caption>
+		<tr style="background: #7f9d99">
+		<div>
+		<th>JOB ID</th>
+		<th>CUSTOMER NAME</th>
+		<th>AMOUNT DUE</th>
+		<th>PAYMENT STATUS</th>
+		</tr>
+		</div>
+		<div>
+		<tr>
+		<td>42235</td>
+		<td>Jhon  Doe</td>
+		<td>$350</td>
+		<td>Pending</td>
+		</tr>
+		</div>
+		<div>
+		<td>42442</td>
+		<td>Jennifer Smith</td>
+		<td>$220</td>
+		<td>Pending</td>
+		</tr>
+		<div>
+		<td>42257</td>
+		<td>Jhon  Smith</td>
+		<td>$341</td>
+		<td>Pending</td>
+		</tr>
+		</div>
+		<div>
+		<td>42311</td>
+		<td>Jhon  Carpenter</td>
+		<td>$115</td>
+		<td>Pending</td>
+		</tr>
+		</div>
+	</table>
+</div>
+</body>
+</html>
